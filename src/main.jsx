@@ -8,6 +8,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Product from './pages/Product'
 import Cart from './pages/Cart'
+import SingleProduct from './pages/SingleProduct'
+// import SingleProductCard from './pages/SingleProduct'
 
 const router = createBrowserRouter([{
 
@@ -33,6 +35,10 @@ const router = createBrowserRouter([{
     {
       path:'/cart',
       element:<Cart/>
+    },
+    {
+      path:'/products/:id',
+      element:<SingleProduct/>
     }
   ]
 }
